@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+.nav-link {
+  color: white !important;
+}
+.navbar-brand {
+  color: white !important;
+}
+.img-fluid {
+  height: 250px !important;
+  width: 250px !important;
+}
+h1 {
+  font-size: 18px !important;
+}
