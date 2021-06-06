@@ -4,13 +4,13 @@ function Navbar(props) {
   const cartObj = useSelector((store) => store.cartReducer);
     return (
       <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              Navbar
+        <nav className="navbar navbar-expand-sm navbar-light bg-primary">
+          <div className="container-fluid">
+            <a className="navbar-brand" href="#">
+              Mr.Fresh
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbar"
@@ -18,24 +18,25 @@ function Navbar(props) {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse navbar-right" id="navbar">
-              <ul class="nav navbar-nav mx-auto">
-                <li class="nav-item pl-5">
-                  <a class="nav-link active" aria-current="page" href="/">
+            <div className="collapse navbar-collapse navbar-right" id="navbar">
+    
+              <ul className="nav navbar-nav mx-auto">
+                <li className="nav-item pl-5">
+                  <a className="nav-link active" aria-current="page" href="/">
                     Home
                   </a>
                 </li>
-                <li class="nav-item pl-3">
-                  <a class="nav-link" href="/addItem">
+                <li className="nav-item pl-3">
+                  <a className="nav-link" href="/addItem">
                     Add Item
                   </a>
                 </li>
               </ul>
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="/addCart">
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <a className="nav-link" href="/addCart">
                     cart {cartObj.cart.length}
                   </a>
                 </li>
@@ -44,6 +45,8 @@ function Navbar(props) {
           </div>
         </nav>
       </div>
+
+
     );
 }
 

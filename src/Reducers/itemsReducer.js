@@ -64,6 +64,14 @@ const initialData = {
 };
 
 function itemsReducer(state=initialData,action){
+switch(action.type){
+  case 'Add_Product':return{
+    ...state,
+    items:[...state.items,action.payload]
+  }
+}
+
+
     return state;
 }
 

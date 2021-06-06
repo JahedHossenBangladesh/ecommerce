@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import bootstrap from '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+// import bootstrap from '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './Components/Navbar';
 import Items from './Components/Items';
 import Footer from './Components/Footer';
@@ -40,9 +40,9 @@ const persistor = persistStore(store);
               <Route path="/addCart" component={Cart} exact />
             </Switch>
           </Router>
-          <Footer />
         </PersistGate>
       </Provider>
+      <Footer />
     </div>
   );
 }

@@ -1,10 +1,22 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 function Cart(props) {
-   const itemObj = useSelector(store => store.cartReducer);
+   const cartObj = useSelector(store => store.cartReducer);
+   const dispatch = useDispatch();
+
+
+
+
+   const tablebody = cartObj.cart.map((item) =>{
+     return <tr>
+       <td>{item.imgName}</td>
+       <td>{item.price}</td>
+       <td><button className="btn-danger" onClick={() => {dispatch({ type: "DELETE", payload: item });}}>Delete</button></td>
+     </tr>
+   })
     return (
-      <div className='row justify-content-center'>
+      <div className="row justify-content-center">
         <table className="table table-dark col-md-8 mt-5">
           <thead>
             <tr>
@@ -13,8 +25,8 @@ function Cart(props) {
               <th>Action</th>
             </tr>
           </thead>
+          <tbody>{tablebody}</tbody>
         </table>
-        <h1>the length:{itemObj.cart.length}</h1>
       </div>
     );
 }

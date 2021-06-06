@@ -2,9 +2,9 @@ import React from 'react';
 
 function Footer(props) {
     return (
-      <div>
-        <h1>This is Footer
-        </h1>
+      <div style={{backgroundColor:'blue',color:'white'}} className='mt-5'>
+       <p>This is done by redux </p>
+       <p>Development and design by Jahed hossen</p>
       </div>
     );
 }

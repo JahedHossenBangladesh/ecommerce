@@ -9,7 +9,11 @@ switch(action.type){
             ...state,
             cart:[...state.cart,action.payload]
         }
-
+        case 'DELETE': 
+        return{
+            ...state,
+            cart:state.cart.filter(item => item.imgName != action.payload.imgName)
+        }
 }
 
     return state;
