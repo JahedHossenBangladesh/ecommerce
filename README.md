@@ -16,3 +16,4 @@
 4. Redux-persist
 5. React-Redux
 6. Combine Reducer
+7. Deploy in netlify
