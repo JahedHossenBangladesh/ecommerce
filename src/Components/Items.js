@@ -28,7 +28,7 @@ function filterItem() {
 
     return (
       <div className="container">
-   <input type="text" className="form-control mb-5" placeholder='Search the Product' value={searchKey} onChange={(e) => {setSearchKey(e.target.value)}} onKeyUp={filterItem}/>
+   <input type="text" className="form-control mb-5 mt-3" placeholder='Search the Product' value={searchKey} onChange={(e) => {setSearchKey(e.target.value)}} onKeyUp={filterItem}/>
         <div className="row">{item}</div>
       </div>
     );
