@@ -1,5 +1,5 @@
 # Ecommerce app with React and Redux
-### [link](mrfreshctg.netlify.app)
+### [mrfreshctg/website/link](mrfreshctg.netlify.app)
 
 ## Feature
 
